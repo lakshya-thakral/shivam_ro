@@ -60,13 +60,16 @@ function renderFrame(index) {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Cover-fit: scale + center the image
+    // Cover-fill: always fill entire canvas, crop if needed
     const cw = canvas.width;
     const ch = canvas.height;
     const iw = img.naturalWidth;
     const ih = img.naturalHeight;
 
-    const scale = Math.max(cw / iw, ch / ih);
+    // On mobile portrait, use min scale so full width is always visible
+    const isMobile = window.innerWidth <= 640;
+    const scale = isMobile ? Math.min(cw / iw, ch / ih) : Math.max(cw / iw, ch / ih);
+
     const drawW = iw * scale;
     const drawH = ih * scale;
     const drawX = (cw - drawW) / 2;
@@ -181,4 +184,6 @@ function updateOverlayText(progress) {
 
 // ── Start ──────────────────────────────────────────────────────
 preloadFrames();
+
+
 
