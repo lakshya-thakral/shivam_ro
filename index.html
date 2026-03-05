@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam RO | Premium Hydration</title>
+    <meta name="description"
+        content="Premium RO filtered camper water supply for your office and home. Pure water, on time, every time.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-[#050608] text-white overflow-x-hidden">
+
+    <div class="liquid-bg"></div>
+
+    <!-- NAV -->
+    <nav
+        class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl px-6 py-3 flex justify-between items-center rounded-full border border-white/10 bg-black/20 backdrop-blur-xl">
+        <span class="font-bold tracking-tighter text-xl italic text-blue-400">SHIVAM RO FILTERED WATER</span>
+        <a href="https://wa.me/919416996644?text=Hello%20Shivam%20RO,%20I%20want%20to%20order%20a%20water%20camper!"
+            target="_blank" id="nav-order-btn"
+            class="text-sm font-medium bg-white text-black px-6 py-2.5 rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+            Order Now
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-44 pb-10 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
+            HYDRATION <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-b from-blue-300 to-blue-600">REDEFINED.</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            Premium RO filtered camper supply for your office and home. <br> Pure water. On time. Every time.
+        </p>
+        <p class="scroll-hint text-blue-400/60 text-sm tracking-widest uppercase animate-bounce">↓ Scroll to see the
+            magic</p>
+    </section>
+
+    <!-- SCROLL ANIMATION SECTION -->
+    <section id="animation-section" class="relative">
+        <!-- Sticky scroll canvas wrapper -->
+        <div id="canvas-sticky-wrapper">
+            <canvas id="animation-canvas"></canvas>
+            <!-- Overlay text that fades in/out during scroll -->
+            <div id="scroll-overlay-text" class="overlay-text-container">
+                <div class="overlay-text-inner" id="overlay-phase-1">
+                    <span class="overlay-label">Pure &amp; Clean</span>
+                    <h2 class="overlay-heading">Every Drop, <br>Perfectly Filtered</h2>
+                </div>
+                <div class="overlay-text-inner hidden" id="overlay-phase-2">
+                    <span class="overlay-label">Premium Supply</span>
+                    <h2 class="overlay-heading">Delivered Fresh <br>To Your Door</h2>
+                </div>
+                <div class="overlay-text-inner hidden" id="overlay-phase-3">
+                    <span class="overlay-label">Stay Hydrated</span>
+                    <h2 class="overlay-heading">The Power of <br>Pure Water</h2>
+                </div>
+            </div>
+            <!-- Scroll progress bar -->
+            <div id="scroll-progress-bar"></div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+            class="feature-card p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-blue-500/50 transition-all">
+            <i data-lucide="shield-check" class="text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">7-Stage RO</h3>
+            <p class="text-gray-500 text-sm">Military grade filtration for absolute purity.</p>
+        </div>
+        <div
+            class="feature-card p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-blue-500/50 transition-all">
+            <i data-lucide="truck" class="text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Express Delivery</h3>
+            <p class="text-gray-500 text-sm">Fresh campers delivered within 60 minutes.</p>
+        </div>
+        <div
+            class="feature-card p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-blue-500/50 transition-all">
+            <i data-lucide="zap" class="text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Smart Supply</h3>
+            <p class="text-gray-500 text-sm">Predictive refills so you never run out of water.</p>
+        </div>
+    </section>
+
+    <!-- ORDER SECTION -->
+    <section id="order" class="py-20 text-center relative">
+        <div
+            class="max-w-3xl mx-auto px-6 p-10 rounded-[3rem] bg-gradient-to-b from-blue-500/10 to-transparent border border-white/10 backdrop-blur-md">
+            <h2 class="text-4xl font-bold mb-4">Need Fresh Water?</h2>
+            <p class="text-gray-400 mb-8">Click below to message us directly on WhatsApp for instant delivery.</p>
+
+            <a href="https://wa.me/919416996644?text=Hello%20Shivam%20RO,%20I%20would%20like%20to%20order%20a%20water%20camper!"
+                target="_blank" id="whatsapp-order-btn"
+                class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#20ba5a] transition-all transform hover:-translate-y-1">
+                <i data-lucide="message-circle"></i>
+                Order via WhatsApp
+            </a>
+
+            <div class="mt-8 flex justify-center gap-6 text-gray-500 text-sm">
+                <span>✓ 60 Min Delivery</span>
+                <span>✓ Pure RO Water</span>
+                <span>✓ Verified Service</span>
+            </div>
+        </div>
+    </section>
+    <div>
+        <nav><div
+            class="feature-card p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-blue-500/50 transition-all">
+            <i data-lucide="shield-check" class="text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">CONTACT US</h3>
+            <p class="text-gray-500 text-sm">Have questions? Reach out to us!</p>
+            <p class="text-gray-500 text-sm">Dial 9416996644 or email us at sunilshivam@gmail.com</p>
+        </div> 
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
